@@ -1,6 +1,6 @@
 import pytest
 
-from algorithms.level_6.multiple_of_3_n_5 import sum_of_multipliers
+from algorithms.level_6.multiple_of_3_n_5 import sum_of_multipliers, sum_of_multipliers_best_practice
 
 @pytest.mark.parametrize("number, result",
                          [
@@ -9,7 +9,6 @@ from algorithms.level_6.multiple_of_3_n_5 import sum_of_multipliers
                              (16, 60),
                              (3, 0),
                              (5, 3),
-                             (15, 45)
-                         ])
+                             (15, 45)])
 def sum_of_multipliers_test(number, result):
     assert sum_of_multipliers(number) == result
